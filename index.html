@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Important things</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="todo.js"></script>
 </head>
 <body>
     <h1>Important things</h1>
@@ -10,7 +12,10 @@
 
     <label for="mind">Whats on your mind? </label>
     <input type="text" id="mind" name="mind" placeholder="Share your thoughts...">
-    <input type="submit" value="Add">
+    <input type="button" value="Add" onclick="addTodo()">
 
+    <ul id="todoList">
+
+    </ul>
 </body>
 </html>
